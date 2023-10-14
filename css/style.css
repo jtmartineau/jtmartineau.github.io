@@ -20,16 +20,16 @@ h3,
 h4,
 h5,
 h6 {
-  color: #1e1e1e;
+  color: #fca522;
 }
 
 a {
-  color: #1e1e1e;
+  color: #ffc62a;
   transition: all 0.5s ease-in-out;
 }
 
 a:hover {
-  color: #0078ff;
+  color: #ffc037;
   text-decoration: none;
   transition: all 0.5s ease-in-out;
 }
@@ -39,7 +39,7 @@ a:hover {
 }
 
 .color-a {
-  color: #0078ff;
+  color: #ffd151;
 }
 
 .color-d {
