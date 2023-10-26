@@ -38,7 +38,7 @@
     <div class="intro-content display-table">
       <div class="table-cell">
         <div class="container">
-          <h2 class="intro-title mb-4">NLP: Kickstarter Analysis</h2>
+          <h2 class="intro-title mb-4">Neural Network Snow Pack Predictions</h2>
         </div>
       </div>
     </div>
@@ -52,58 +52,31 @@
         <div class="col-md-12">
           <div class="post-box">
             <div class="post-thumb">
-              <img src="img/post-1.jpg" class="img-fluid" alt="">
+              <img src="img/Big_Cottonwood_SWE_LSTM_Model.png" class="img-fluid" alt="">
             </div>
             <div class="post-meta">
-              <h1 class="article-title">Using Word2vec to Quantify Descriptive Text in Kickstarter Campaigns</h1>
+              <h1 class="article-title">
+                <a href = "https://github.com/jtmartineau/utah-snow-water-equivalent-modeling/blob/main/SWE-predictive-analysis.ipynb">
+                  Using an LSTM to predict snow water equivalent (SWE) snow pack in the Wasatch mountains</a>
+              </h1>
               <ul>
                 <li>
                   <span class="ion-ios-person"></span>
-                  <a href="#">Jason Martineau</a>
+                  <a href="index.html">back to main page</a>
                 </li>
                 <li>
-                  <span class="ion-pricetag"></span>
-                  <a href="#">NLP</a>
-                </li>
-              </ul>
             </div>
             <div class="article-content">
               <p>
-                Mauris blandit aliquet elit, eget tincidunt nibh pulvinar a. Cras ultricies ligula sed magna dictum
-                porta. Quisque velit
-                nisi, pretium ut lacinia in, elementum id enim. Praesent sapien massa, convallis a pellentesque
-                nec, egestas non nisi. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere
-                cubilia Curae; Donec velit neque, auctor sit amet aliquam vel, ullamcorper sit amet ligula.
-                Nulla quis lorem ut libero malesuada feugiat.
-              </p>
-              <p>
-                Nulla porttitor accumsan tincidunt. Cras ultricies ligula sed magna dictum porta. Mauris blandit
-                aliquet elit, eget tincidunt
-                nibh pulvinar a. Cras ultricies ligula sed magna dictum porta. Lorem ipsum dolor sit amet,
-                consectetur adipiscing elit. Donec sollicitudin molestie malesuada.
-              </p>
-              <p>
-                Mauris blandit aliquet elit, eget tincidunt nibh pulvinar a. Lorem ipsum dolor sit amet, consectetur
-                adipiscing elit. Praesent
-                sapien massa, convallis a pellentesque nec, egestas non nisi. Lorem ipsum dolor sit amet,
-                consectetur adipiscing elit. Curabitur arcu erat, accumsan id imperdiet et, porttitor at
-                sem. Donec rutrum congue leo eget malesuada.
-              </p>
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla quis lorem ut libero malesuada feugiat.
-                Curabitur arcu erat,
-                accumsan id imperdiet et, porttitor at sem. Vivamus suscipit tortor eget felis porttitor
-                volutpat. Vivamus suscipit tortor eget felis porttitor volutpat. Quisque velit nisi, pretium
-                ut lacinia in, elementum id enim.
               </p>
               <blockquote class="blockquote">
-                <p class="mb-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
+                <p class="mb-0">SWE is an important indicator of how much water the state of Utah will have access to throughout the spring, summer, and fall months.</p>
               </blockquote>
               <p>
-                Nulla porttitor accumsan tincidunt. Cras ultricies ligula sed magna dictum porta. Mauris blandit
-                aliquet elit, eget tincidunt
-                nibh pulvinar a. Cras ultricies ligula sed magna dictum porta. Lorem ipsum dolor sit amet,
-                consectetur adipiscing elit. Donec sollicitudin molestie malesuada.
+                In this notebook I import, clearn and format snowpack data collected throughout the state of Utah. I then train an LSTM model to 
+                use 30 days of past snow pack data to predict the expected snow pack 7 days into the future. The resulting model works well. Unsurprisingly
+                it wold have predicted lower snow pack for the winter of 2022/23 than we actually received -- last winter was a banner year. The resulting 
+                root mean squared error (RMSE) is four inches, when the model makes predictions on data it has never seen during its training or validation cycles.
               </p>
             </div>
           </div>
