@@ -24,12 +24,24 @@ h6 {
 }
 
 a {
+  color: #2a5242;
+  transition: all 0.5s ease-in-out;
+  text-decoration: underline;
+}
+
+a:hover {
+  color: #3b3b3b;
+  text-decoration: none;
+  transition: all 0.5s ease-in-out;
+}
+
+b {
   color: #1e1e1e;
   transition: all 0.5s ease-in-out;
 }
 
-a:hover {
-  color: #24b67e;
+b:hover {
+  color: #acbdb6;
   text-decoration: none;
   transition: all 0.5s ease-in-out;
 }

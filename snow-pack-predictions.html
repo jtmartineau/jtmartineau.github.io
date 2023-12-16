@@ -4,7 +4,6 @@
   <meta charset="utf-8">
   <title>Kickstarter Funding Analysis</title>
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
-  <meta content="" name="keywords">
   <meta content="" name="description">
 
   <!-- Favicons -->
@@ -22,7 +21,7 @@
   <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet">
 
   <!-- Main Stylesheet File -->
-  <link href="css/style.css" rel="stylesheet">
+  <link href="css/style-green.css" rel="stylesheet">
 
   <!-- =======================================================
     Theme Name: DevFolio
@@ -31,6 +30,37 @@
     License: https://bootstrapmade.com/license/
   ======================================================= -->
 </head>
+<body id="page-top">
+
+  <!--/ Nav Star /-->
+  <nav class="navbar navbar-b navbar-trans navbar-expand-md fixed-top" id="mainNav">
+    <div class="container">
+      <a class="navbar-brand js-scroll" href="#page-top">navigation</a>
+        <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarDefault"
+          aria-controls="navbarDefault" aria-expanded="false" aria-label="Toggle navigation">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+        <div class="navbar-collapse collapse justify-content-end" id="navbarDefault">
+          <ul class="navbar-nav">
+            <li class="nav-item js-scroll">
+              <a href="/home/jason/Documents/PersonalGithubWebsite/jtmartineau.github.io/index.html">Home</a>
+            </li>
+            <li class="nav-item js-scroll">
+              <a href="/home/jason/Documents/PersonalGithubWebsite/jtmartineau.github.io/snow-pack-predictions.html">Snowpack Predictions</a>
+            </li>
+            <li class="nav-item js-scroll">
+              <a href="/home/jason/Documents/PersonalGithubWebsite/jtmartineau.github.io/kickstarter-clustering.html">Kickstarter Clustering</a>
+            </li>
+            <li class="nav-item js-scroll">
+              <a href="/home/jason/Documents/PersonalGithubWebsite/jtmartineau.github.io/esports-tableau-embedding.html">Esports Tableau Dashboard</a>
+            </li>
+          </ul>
+        </div>
+    </div>
+  </nav>
+  <!--/ Nav End /-->
 
   <!--/ Intro Skew Star /-->
   <div class="intro intro-single route bg-image" style="background-image: url(img/overlay-bg.jpg)">
@@ -38,7 +68,7 @@
     <div class="intro-content display-table">
       <div class="table-cell">
         <div class="container">
-          <h2 class="intro-title mb-4">Neural Network Snow Pack Predictions</h2>
+          <h2 class="intro-title mb-4">Snow Pack Prediction in the Wasatch Using a Neural Network</h2>
         </div>
       </div>
     </div>
@@ -51,6 +81,7 @@
       <div class="row">
         <div class="col-md-12">
           <div class="post-box">
+            <!--
             <div class="post-thumb">
               <img src="img/Big_Cottonwood_SWE_LSTM_Model.png" class="img-fluid" alt="">
             </div>
@@ -66,18 +97,36 @@
                 </li>
                 <li>
             </div>
+          -->
+          <div class="post-meta">
+            <h1 class="article-title">Code Links</h1> 
+          </div>
             <div class="article-content">
               <p>
+                <a href = "https://github.com/jtmartineau/utah-snow-water-equivalent-modeling/blob/main/SWE-predictive-analysis.ipynb">
+                  CLICK HERE to view the jupyter notebook.
+                </a>
               </p>
-              <blockquote class="blockquote">
-                <p class="mb-0">SWE is an important indicator of how much water the state of Utah will have access to throughout the spring, summer, and fall months.</p>
-              </blockquote>
+            </div>
+            <div class="post-meta">
+              <h1 class="article-title">Project Summary</h1> 
+            </div>
+            <div class="article-content">
               <p>
-                In this notebook I import, clearn and format snowpack data collected throughout the state of Utah. I then train an LSTM model to 
-                use 30 days of past snow pack data to predict the expected snow pack 7 days into the future. The resulting model works well. Unsurprisingly
-                it wold have predicted lower snow pack for the winter of 2022/23 than we actually received -- last winter was a banner year. The resulting 
-                root mean squared error (RMSE) is four inches, when the model makes predictions on data it has never seen during its training or validation cycles.
+                In this notebook I import, clean, and format snowpack data collected throughout the state of Utah. 
+                I then train an LSTM model to 
+                use 30 days of past snow pack data to predict the expected snow pack 7 days into the future, within the Big Cottonwood snowbasin in 
+                northern Utah. 
+                The model works well, yeilding an RMSE of 3 inches when the predicted and actual data for 2019--2023 are compared. 
+                Most of this disparity comes from the 2023 snowyear,
+                which was a record breaking year and far outside of what characterizes normal snopack in Utah.
               </p>
+              <p>
+                To achieve this result I used a Keras implementation of an LSTM with 16 nodes, trained over 20 epochs.  Further development 
+                to improve this model might include incorporating reinforcement learning to improve the model's accuracy. I collected the data
+                used to train, validate, and test the model from 
+                <a href = "https://www.nrcs.usda.gov/wps/portal/wcc/home/quicklinks/states/utah/snow/basinData/"> this portal</a> on the USDA website.
+              </p>  
             </div>
           </div>
         </div>
@@ -95,15 +144,6 @@
           <div class="col-sm-12">
             <div class="copyright-box">
               <p class="copyright">&copy; Copyright <strong>Jason Martineau</strong>. All Rights Reserved</p>
-              <div class="credits">
-                <!--
-                  All the links in the footer should remain intact.
-                  You can delete the links only if you purchased the pro version.
-                  Licensing information: https://bootstrapmade.com/license/
-                  Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/buy/?theme=DevFolio
-                -->
-                Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
-              </div>
             </div>
           </div>
         </div>

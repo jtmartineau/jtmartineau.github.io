@@ -9,6 +9,27 @@
             "request": "launch",
             "name": "Open index.html",
             "file": "/home/jason/Documents/PersonalGithubWebsite/jtmartineau.github.io/index.html"
+        },
+
+        {
+            "type": "chrome",
+            "request": "launch",
+            "name": "Open esports.html",
+            "file": "/home/jason/Documents/PersonalGithubWebsite/jtmartineau.github.io/esports-tableau-embedding.html"
+        } ,
+
+        {
+            "type": "chrome",
+            "request": "launch",
+            "name": "Open kickstarter.html",
+            "file": "/home/jason/Documents/PersonalGithubWebsite/jtmartineau.github.io/kickstarter-clustering.html"
+        },
+
+        {
+            "type": "chrome",
+            "request": "launch",
+            "name": "Open snow-pack.html",
+            "file": "/home/jason/Documents/PersonalGithubWebsite/jtmartineau.github.io/snow-pack-predictions.html"
         }
     ]
 }
