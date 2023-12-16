@@ -23,6 +23,10 @@ h6 {
   color: #1e1e1e;
 }
 
+li{
+  margin: 10px 0;
+}
+
 a {
   color: #2a5242;
   transition: all 0.5s ease-in-out;
