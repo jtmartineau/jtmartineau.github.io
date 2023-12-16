@@ -157,10 +157,10 @@
             <div class="article-content">
               <p>
                 The goal of this project was to make a Tableau dashboard that would allow a user to see how valuable 
-                an eSports athlete might be to an advertiser. The eSport game I chose was, Star Craft 2. This game has been played
-                professionally for at least ten years in some form. It has a huge user base and computer hardware companies
-                currently pay for advertising exposure associated with certain players. It is one of the most enduring eSports games,
-                and the eSports industry is growing every year.
+                an eSports athlete might be to an advertiser. The eSport game I chose was Star Craft 2. This game has been played
+                professionally for at least ten years. It has a huge fan base, with computer hardware companies
+                currently paying for advertising exposure during gamess. The eSports industry is growing every year,
+                and Star Craft 2 is one of the most enduring eSports games.
               </p>
               <p>
                 With this goal in mind, I assumed that two traits would make a player valuable to a brand:
@@ -170,43 +170,42 @@
                   </li>
                   <li>
                     The player tends to play long games, so that there is ample time during the broadcast of the game for the brand
-                    to be pictured on camera with the player. (The brand could be for computer hardware the player users or printed
+                    to be pictured on camera with the player. (The brand could be for computer hardware that the player uses or could printed
                     on the player's jersey.)
                   </li>
                 </ol>
               </p>
               <p>
-                With these assumptions I achieved my initial objective in two steps.
+                With these assumptions, I next took the following steps.
                 <ol>
                   <li>
                     I built a webscraper to collect data on Star Craft 2 player performances. The website I chose to scrape from is a 
                     <a href="https://lotv.spawningtool.com/">large repository</a> containing tens of thousands of recorded games. 
-                    Using the python library, BeautifulSoup I collected ~80k records of games with data about which player won, which 
+                    Using the python library, BeautifulSoup I collected records of games with data about which player won, which 
                     "faction" (humans called, "Terrans"; aliens called, "Protoss"; or evil space insects called, "Zerg") they were playing as,
-                    when they played each game, during which tournament, etc. You can find some details about the web scrape in the jupyter notebook link above; however be aware that
+                    when each game was played, and during which tournament, among a few other features. You can find some details about the web scrape in the jupyter notebook link above; however be aware that
                     I have not included the full web scraper so that people, on the off chance that they find this post, 
-                    they do not inundate the website with excess traffic.
+                    do not inundate the website with excess traffic.
                   </li>
                   <li>
                     I cleaned and formatted the player data that I scraped and then imported it into a Tableau Public dashboard that 
-                    I developed. (I only included a couple thousand records for practical reasons.)
-                    You can find this interactive dashboard through the tableau link, above. 
+                    I developed. You can find this interactive dashboard through the tableau link, above. 
                   <li>
                     On the left half of the dashboard
                     are views specific to player wins and the length of games that they play. On the right half of the dashboard are 
-                    views specific to which average game length within tournaments. The user may also filter by minimum game length,
-                    which faction to show and player name to better interrogate the data. 
+                    views specific to the average game length within tournaments. The user may also filter by minimum game length,
+                    which faction to show, and player name to better interrogate the data. 
                   </li>
                 </ol>
-                Using my new dashboard I finally determined which three players would be the most valuable to target for sponsorship details,
-                and which tournaments they an advertiser would want to target for that sponsorship. In order of value the players are:
+                Using my new dashboard I determined which three players would be the most valuable to target for sponsorship deals. 
+                Additionally, I also determined the tournaments in which an advertiser would want to target them.
                 <ol>
                   <li>
                     Raynor is the most valuable player. His faction is, "Zerg." He has the most winning record and plays the longest games
                     among very successful players. The "map" (the virtual space in which the game is played) that Raynor wins on the most frequently is 
-                    "Royal Blood" and the map on which he has the longest games is "NeoHumanity." I would suggest offering him a bonus for each time 
+                    "Royal Blood" and the map on which he plays the longest games is "NeoHumanity." I would suggest offering him a bonus for each time 
                     he played on these maps because they are likely to maximize my two defining traits of a valuable player. The tournament with the greates
-                    frequency of these maps being played was, "ESL SC2 Masters 2023 Summer (Regionals)" so I would also recommend targeting a sponsorship
+                    frequency of these maps being played was, "ESL SC2 Masters 2023 Summer (Regionals)." Therefore, I would also recommend targeting a sponsorship
                     for him within that tournament.
                   </li>
                   <li>
