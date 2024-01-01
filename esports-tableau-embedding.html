@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
-  <title>Kickstarter Funding Analysis</title>
+  <title>eSports Athlete Sponsorship</title>
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
   <meta content="" name="description">
 
@@ -165,31 +165,31 @@
                 The goal of this project was to make a Tableau dashboard that would allow a user to see how valuable 
                 an eSports athlete might be to an advertiser. The eSport game I chose was Star Craft 2. This game has been played
                 professionally for at least ten years. It has a huge fan base, with computer hardware companies
-                currently paying for advertising exposure during gamess. The eSports industry is growing every year,
+                currently paying for advertising exposure during games. The eSports industry is growing every year
                 and Star Craft 2 is one of the most enduring eSports games.
               </p>
               <p>
-                With this goal in mind, I assumed that two traits would make a player valuable to a brand:
+                With this goal in mind I assumed that two traits would make a player valuable to a brand:
                 <ol>
                   <li>
-                    They player wins often so that an associated brand would gain an air of success through that association.
+                    The player wins often so that an associated brand would gain an air of success through that association.
                   </li>
                   <li>
                     The player tends to play long games, so that there is ample time during the broadcast of the game for the brand
-                    to be pictured on camera with the player. (The brand could be for computer hardware that the player uses or could printed
+                    to be pictured on camera with the player. (The brand could be for computer hardware that the player uses or could be printed
                     on the player's jersey.)
                   </li>
                 </ol>
               </p>
               <p>
-                With these assumptions, I next took the following steps.
+                With these assumptions I next took the following steps.
                 <ol>
                   <li>
                     I built a webscraper to collect data on Star Craft 2 player performances. The website I chose to scrape from is a 
                     <a href="https://lotv.spawningtool.com/">large repository</a> containing tens of thousands of recorded games. 
-                    Using the python library, BeautifulSoup I collected records of games with data about which player won, which 
+                    Using the python library, BeautifulSoup I collected records of games. These records included data about which player won, which 
                     "faction" (humans called, "Terrans"; aliens called, "Protoss"; or evil space insects called, "Zerg") they were playing as,
-                    when each game was played, and during which tournament, among a few other features. You can find some details about the web scrape in the jupyter notebook link above; however be aware that
+                    when each game was played, during which tournament, etc.. You can find some details about the web scraper in the jupyter notebook link above; however be aware that
                     I have not included the full web scraper so that people, on the off chance that they find this post, 
                     do not inundate the website with excess traffic.
                   </li>
@@ -210,7 +210,7 @@
                     Raynor is the most valuable player. His faction is, "Zerg." He has the most winning record and plays the longest games
                     among very successful players. The "map" (the virtual space in which the game is played) that Raynor wins on the most frequently is 
                     "Royal Blood" and the map on which he plays the longest games is "NeoHumanity." I would suggest offering him a bonus for each time 
-                    he played on these maps because they are likely to maximize my two defining traits of a valuable player. The tournament with the greates
+                    he played on these maps because they are likely to maximize my two defining traits of a valuable player. The tournament with the greatest
                     frequency of these maps being played was, "ESL SC2 Masters 2023 Summer (Regionals)." Therefore, I would also recommend targeting a sponsorship
                     for him within that tournament.
                   </li>
@@ -224,8 +224,8 @@
                     My third and final recommendation would be for the player, "Spirit." He has a strong winning record and plays games 
                     only slightly shorter than "Raynor." In picking him I am making a judgement call to prioritize game length over wins: 
                     the players, "Clem," "MaxPax," and "Skillous" all have a few more wins than him, but their games are all shorter on average.
-                    Spirit's most winning map is, "Grevsan" and the map on which he plays the longest games is, "Babylon." I would recommend 
-                    bonuses for him playing on either of these. I would target him for the same  tournament as the two players above:
+                    Spirit's most winning map is, "Grevsan" and the map on which he plays the longest games is, "Babylon." I would recommend giving him 
+                    bonuses for playing on either of these maps. I would target him for the same tournament as the two players above:
                     "ESL SC2 Masters 2023 Summer (Regionals)." His best maps are also played most frequently in that tournamnet.
                   </li>
                 </ol>
